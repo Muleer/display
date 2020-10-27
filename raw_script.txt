@@ -16,3 +16,13 @@ then
   rm -fR ./local/$site_name
   mv ./remote/$site_name ./local/
 fi
+
+# checking git
+git pull
+
+chmod +X dropbox_uploader.sh
+chmod +X file_check.sh
+chmod +X add_feature.sh
+
+./add_feature.sh
+
